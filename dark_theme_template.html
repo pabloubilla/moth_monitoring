@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bokeh Application</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    {{ bokeh_css }}
+</head>
+<body>
+    {% block contents %}{% endblock %}
+    {{ bokeh_js }}
+</body>
+</html>
