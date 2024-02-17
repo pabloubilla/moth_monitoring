@@ -3,6 +3,8 @@ from bokeh.models import Div, Spinner, TextInput, ColumnDataSource, CustomJS
 import numpy as np
 from bokeh.layouts import layout
 
+### this is just an example to show how to use the Spinner widget in Bokeh ###
+
 ### https://www.youtube.com/watch?v=HDvxYoRadcA&ab_channel=NeuralNine ###
 
 # Initial value of a
