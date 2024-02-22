@@ -22,6 +22,9 @@ These packages can be installed using pip:
 
 ```bash
 pip install bokeh pandas geopandas numpy requests
+```
 
+Then to run the app use the following command in the working directory:
 ```bash
 python -m bokeh serve --show main.py
+```
