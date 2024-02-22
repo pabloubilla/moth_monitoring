@@ -20,8 +20,8 @@ Before running this application, ensure the following dependencies are installed
 
 These packages can be installed using pip:
 
-'''bash
+```bash
 pip install bokeh pandas geopandas numpy requests'''
 
-'''bash
+```bash
 python -m bokeh serve --show main.py'''
