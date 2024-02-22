@@ -1,6 +1,6 @@
 # Interactive Habitat Monitoring Map with Bokeh
 
-This project leverages the Bokeh library to create an interactive web application for visualizing and optimizing the placement of environmental monitors in the Pirbright Range. It is designed to assist environmental scientists and conservationists in strategically deploying monitors to efficiently cover different habitat types.
+This project is built on the context of locating AMI-traps in order to monitor moths in a remote site in Surrey.
 
 ## Features
 
@@ -20,5 +20,8 @@ Before running this application, ensure the following dependencies are installed
 
 These packages can be installed using pip:
 
-```bash
-pip install bokeh pandas geopandas numpy requests
+'''bash
+pip install bokeh pandas geopandas numpy requests'''
+
+'''bash
+python -m bokeh serve --show main.py'''
