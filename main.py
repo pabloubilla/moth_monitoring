@@ -132,7 +132,7 @@ checkbox_group = CheckboxGroup(labels=point_labels, active=list(range(len(coordi
 # Create a selection for K number of points
 select_K = Select(title='Select number of monitors (K):', value='4', options=[str(i) for i in range(1,10)])
 # create slider to select R
-slider_R = Slider(start=10, end=200, value=50, step=10, title="Select coverage radius (R)")
+slider_R = Slider(start=10, end=200, value=50, step=10, title="Select coverage radius in meters (R)")
 # create slider to select q
 slider_q = Slider(start=0.1, end=0.4, value=0.2, step=0.05, title="Select Wet Heath priority (q)")
 
@@ -197,6 +197,11 @@ p = figure(x_axis_label='Longitude', y_axis_label='Latitude', title = 'Location 
 p.patches('x', 'y', source=source,
          fill_color={'field': 'SWT_Summar', 'transform': color_mapper},
          fill_alpha=1.0, line_color="black", line_width=0.05, legend_field='SWT_Summar')
+# fontsize
+p.xaxis.axis_label_text_font_size = "12pt"
+p.yaxis.axis_label_text_font_size = "12pt"
+p.title.text_font_size = "12pt"
+
 
 # add points
 # p.circle('x', 'y', size='size', source=psource, color="deeppink")
@@ -218,9 +223,10 @@ p2.xaxis.major_label_orientation = 0.5
 
 p2.vbar(x='Habitat Type', top='Area covered (m2)', width=0.9, source=hsource,
         fill_color={'field': 'Habitat Type', 'transform': color_mapper})
-# use quad instead
-# p2.quad(top='Area covered (m2)', bottom=0, left='Habitat Type', right='Habitat Type', source=hsource)
-
+# fontsize
+p2.xaxis.axis_label_text_font_size = "12pt"
+p2.yaxis.axis_label_text_font_size = "12pt"
+p2.title.text_font_size = "12pt"
 
 # define layout
 # sliders on top and p and p2 below
